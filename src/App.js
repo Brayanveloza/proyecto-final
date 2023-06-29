@@ -4,7 +4,9 @@ import Detail from "./components/Detail";
 import Listado from "./components/Listado";
 
 function App() {
+  
   return (
+    
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/Listado" element={<Listado />} />
@@ -14,6 +16,7 @@ function App() {
       />
     </Routes>
   );
+
 }
 
 export default App;

@@ -1,10 +1,10 @@
 .container {
   color: #FF7E58;
-  width: 800px !important;
+  width: 650px !important;
   height: 400px !important;
-  padding: 40px !important;
+  padding: 50px !important;
   border-radius: 20px;
-  background: transparent; 
+  background: #282c34; 
   border: 2px solid rgb(255,255,255,0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;

@@ -4,25 +4,23 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("C:\proyecto-finl1\src\img\paisaje.jpg") !important;
-
-}
-
-.title {
-  color: #738f93;
-  font-size: 40px;
-  font-family: fantasy, sans-serif;
-  margin-bottom: 0;
-}
+  background-image: url("./img/paisaje.jpg"); 
+} 
 
 .img-home {
-  width: 500px;
   padding: 50px;
+}
+
+.title{
+  height: 198px;
+}
+.title1{
+padding: 1px;
 }
 
 .btn-search {
   background-color: #1ba94c;
-  color: white;
+  color: #ffffff;
   box-shadow: 0 4px 12px rgb(27 169 76 / 50%);
   font-size: 18.005px;
   padding-left: 1.528em;
@@ -35,9 +33,10 @@ body {
 }
 
 .btn-search:hover {
-  background-color: white;
+  background-color: #ffffff;
   border: 1px solid #1ba94c;
   color: #1ba94c;
 }
+
 
 

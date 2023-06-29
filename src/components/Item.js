@@ -22,8 +22,8 @@ export function Item(props) {
         props.creador
       }
     >
-      <div className="App">
-        <header className="App-header">
+      <div>
+        <header>
           <img
             className="img-home"
             src={require(`../img/${props.imagen}.jpg`)}

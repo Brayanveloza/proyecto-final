@@ -17,22 +17,23 @@ const Detail = () => {
 
   return (
     <div className="App-header1">
-      <p className="caracteristicas"></p>
-      <h1 className="title">Nombre: {nombre}</h1>
-      <img
-        className="img-home"
-        src={require(`../img/${imagen}.jpg`)}
-        alt={"foto de" + nombre}
-      />
-      <h1 className="title">Edad: {edad}</h1>
-      <h1 className="title">Sexo: {sexo}</h1>
-      <h1 className="title">Altura: {altura}</h1>
-      <h1 className="title">Poder o Habilidad: {poder}</h1>
-      <h1 className="title">Creador o Autor: {creador}</h1>
-      <div>
-        <Link to="/Listado" className="btn-search">
-          Atras
-        </Link>
+      <div className="card">
+        <div className="card-body">
+          <h1 className="card-title">Nombre: {nombre}</h1>
+          <img
+            className="card-img"
+            src={require(`../img/${imagen}.jpg`)}
+            alt={"foto de " + nombre}
+          />
+          <p className="card-text">Edad: {edad}</p>
+          <p className="card-text">Sexo: {sexo}</p>
+          <p className="card-text">Altura: {altura}</p>
+          <p className="card-text">Poder o Habilidad: {poder}</p>
+          <p className="card-text">Creador o Autor: {creador}</p>
+          <Link to="/Listado" className="btn btn-primar">
+            Atrás
+          </Link>
+        </div>
       </div>
     </div>
   );

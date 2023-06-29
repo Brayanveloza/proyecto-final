@@ -1,11 +1,13 @@
 .App {
     text-align: center;
     overflow-y: hidden;
+    background-image: url("../img/paisaje.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
   }
-  
   .App-header {
-    background-color: #282c34;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,20 +15,59 @@
     font-size: calc(10px + 2vmin);
     color: white;
   }
+.title-image{
+  object-fit: contain;
+  width: 100%;
+  vertical-align: middle;
+  height: 75%;
+  }
+  .title2{
+    height: 268px;
+  }
+  .title1{
+    font-family: "Cooper Black";
+    font-size: 25px;
+  font-weight: bold;
+  color: #B3B6B7   ; 
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black ; 
+  }
   
   .item-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0px;
     margin-top: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+  
   }
+  .item-container .img-home{
+    margin: 15px;
+    border-radius: 30px;
+    opacity: 0.7;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+}
+
+.item-container .img-home:hover{
+    opacity: 1;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+    -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+}
   
   .item-container img {
     width: 100%;
     min-height: 47.6vh;
   }
+
+  
   @media (max-width: 1150px) {
-    .item-container {
+   .item-container {
       grid-template-columns: repeat(3, 1fr);
     }
   }

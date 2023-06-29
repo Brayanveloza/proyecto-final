@@ -1,13 +1,31 @@
 import React from "react";
 import Item from "./Item";
 import "../stylesheets/Listado.css";
+import tituloImagen from "../img/attack-on-titan.png";
+import { useNavigate } from "react-router-dom";
 
 function Listado() {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate("/");
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="title">Attack on Titan</h1>
+        <h1 className="title">
+          <div className="title2">
+            <img src={tituloImagen} alt="Attack on Titan" className="title-image" />
+          </div>
+        </h1>
+        <h2 className="title1">TODOS LOS PERSONAJES PRINCIPALES</h2>
       </header>
+      <div>
+      <button className="btn btn-danger" onClick={handleLogout}>
+        Cerrar Sesión
+      </button>
+      </div>
       <div className="item-container">
         <Item
           nombre={"Eren Jaeger"}
